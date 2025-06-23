@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/login",
+      "destination": "https://vue-basic-flame.vercel.app"
+    }
+  ]
+}
