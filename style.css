@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+.heroOLD {
+  background: url('images/hero.png') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.hero {
+  position: relative;
+  height: 60vh; /* Try 50vh or 60vh instead of 100vh */
+  background-image: url('images/hero.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* 20% black overlay */
+  z-index: 1;
+}
+
+/* Ensure content is above overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo span {
+  color: #33ccff;
+}
+.logo-img {
+  height: 50px; /* or whatever looks good */
+  width: auto;
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.login-btn {
+  background: #eb001b;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 90%;         /* Allow the content to expand */
+  max-width: 1000px;  /* Optional: limit extreme width */
+  padding: 0 1rem;
+}
+.hero-content h1 {
+  font-size: 4.5rem; /* adjust as needed */
+  font-weight: bold;
+  line-height: 1.2;
+}
+.cta-buttons {
+  margin-top: 20px;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn.primary {
+  background: #f43f5e;
+  color: white;
+}
+.btn.secondary {
+  background: white;
+  color: #000;
+  margin-left: 10px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background: #f9f9f9;
+  flex-wrap: wrap;
+}
+.feature {
+  text-align: center;
+  width: 200px;
+  margin: 10px;
+}
+.feature img {
+  width: 48px;
+  height: 48px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  font-size: 0.9rem;
+}
