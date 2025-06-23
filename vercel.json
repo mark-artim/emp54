@@ -1,8 +1,10 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/login",
-      "destination": "https://vue-basic-flame.vercel.app/"
+      "destination": "https://vue-basic-flame.vercel.app/",
+      "statusCode": 302
     }
   ]
 }
+
