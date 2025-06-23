@@ -29,6 +29,7 @@ body {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.3); /* 20% black overlay */
   z-index: 1;
+  pointer-events: none;
 }
 
 /* Ensure content is above overlay */
@@ -38,11 +39,14 @@ body {
 }
 
 .navbar {
+  z-index: 10;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   flex-wrap: wrap;
+  pointer-events: auto;
 }
 
 .logo {
