@@ -3,54 +3,322 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>emp54 | Epicor Eclipse Tools</title>
+  <title>emp54 | Eclipse ERP Extensions & Automation Tools</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta name="description" content="emp54 specializes in Eclipse ERP extensions and automation tools. Streamline your Epicor Eclipse operations with our suite of specialized utilities.">
 </head>
 <body>
-  <header class="hero">
-    <nav class="navbar">
-        <div class="logo">
-            <img src="images/emp54Logo.png" alt="emp54 logo" class="logo-img" />
-        </div>
-      <ul>
-        <!-- <li><a href="#features">Features</a></li> -->
-        <!-- <li><a href="#pricing">Pricing</a></li> -->
-        <li><a href="mailto:info@emp24.com?subject=Contact%20from%20Website&body=Hi%20EMP24%20Team,">Contact</a></li>
-        <li><a href="https://vue-basic-flame.vercel.app/" class="login-btn">Login</a></li>
-      </ul>
-    </nav>
-    <div class="hero-content">
-      <h1>Modern Extensions for Epicor Eclipse ERP</h1>
-      <h2>Streamlined tools for distributors—shipping, sales feeds, and more.</h2>
-      <h3 class="warning">emp54 is in it's MVP stage which means it is not for sale yet while some early adopters give it a spin. If you are interested then by all means please reach out and we will keep you informed of progress.</h3>
-      <!-- <div class="cta-buttons">
-        <a href="#contact" class="btn primary">Get Started</a>
-        <a href="#features" class="btn secondary">View Features</a>
-      </div> -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="images/emp54Logo.png" alt="emp54" class="logo-img" />
+        <span class="logo-text">emp<span class="accent">54</span></span>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://vue-basic-production-a944.up.railway.app/login/" class="login-btn">Client Portal</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <section class="features" id="features">
-    <div class="feature">
-      <img src="https://img.icons8.com/?size=100&id=R51JBuB25XpU&format=png&color=000000" />
-      <h3>Kohler Sales Feed Formatter</h3>
-    </div>
-    <div class="feature">
-      <img src="https://img.icons8.com/?size=100&id=LGheHaktLytE&format=png&color=000000" />
-      <h3>Shippo Integration</h3>
-    </div>
-    <div class="feature">
-      <img src="https://img.icons8.com/?size=100&id=20830&format=png&color=000000" />
-      <h3>CSV Import & Validation Tools</h3>
-    </div>
-    <div class="feature">
-      <img src="https://img.icons8.com/color/48/lock.png" />
-      <h3>Fast. Secure ERP Sessions</h3>
+  <!-- Hero Section -->
+  <section class="hero company-hero" id="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-icon">⚡</span>
+        <span>Eclipse ERP Specialists Since 2020</span>
+      </div>
+      <h1 class="hero-title">
+        Supercharge Your 
+        <span class="gradient-text">Eclipse ERP</span>
+      </h1>
+      <p class="hero-subtitle">
+        emp54 delivers powerful extensions and automation tools specifically designed 
+        for Epicor Eclipse ERP. From shipping automation to data validation, 
+        we leverage Eclipse's full API suite to streamline your operations.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Core Products</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Eclipse APIs</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Eclipse Native</div>
+        </div>
+      </div>
+      <div class="cta-buttons">
+        <a href="#products" class="btn btn-primary">
+          <span>Explore Products</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m9 18 6-6-6-6"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <span>Get In Touch</span>
+        </a>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 emp54. All rights reserved.</p>
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Eclipse ERP Extensions</h2>
+        <p>Purpose-built tools that integrate seamlessly with your Epicor Eclipse environment</p>
+      </div>
+      
+      <div class="products-grid">
+        <!-- Ship54 -->
+        <div class="product-card featured" data-aos="fade-up">
+          <div class="product-badge">Most Popular</div>
+          <div class="product-icon shipping">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3>Ship54</h3>
+          <p>Transform your Eclipse ERP shipping operations with Shippo integration, real-time tracking, and automated workflows. From rate shopping to delivery confirmation.</p>
+          <div class="product-features">
+            <div class="feature">✓ Shippo API Integration</div>
+            <div class="feature">✓ Real-time Rate Shopping</div>
+            <div class="feature">✓ Automated Label Generation</div>
+            <div class="feature">✓ Invoice-based Tracking</div>
+            <div class="feature">✓ Freight Cost Posting</div>
+          </div>
+          <div class="product-actions">
+            <a href="ship54.html" class="btn btn-primary">Learn More</a>
+            <a href="https://vue-basic-production-a944.up.railway.app/login/" class="btn btn-outline">Try Demo</a>
+          </div>
+        </div>
+
+        <!-- Kohler Sales Feed -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="product-icon data">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14,2 14,8 20,8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10,9 9,9 8,9"/>
+            </svg>
+          </div>
+          <h3>Kohler Sales Feed Format Tool</h3>
+          <p>Streamline your Kohler supplier relationship with automated sales data formatting. Perfect Eclipse-to-Kohler data transformation every time.</p>
+          <div class="product-features">
+            <div class="feature">✓ Automated Data Extraction</div>
+            <div class="feature">✓ Kohler Format Compliance</div>
+            <div class="feature">✓ Eclipse Invoice Integration</div>
+            <div class="feature">✓ Scheduled Exports</div>
+            <div class="feature">✓ Error Validation</div>
+          </div>
+          <div class="product-actions">
+            <a href="#contact" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+
+        <!-- PDW File Prep -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="product-icon tools">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <h3>PDW File Prep Tools</h3>
+          <p>Automate your price file preparations and data workflows. Eliminate manual processing and ensure data accuracy across your systems.</p>
+          <div class="product-features">
+            <div class="feature">✓ Automated File Processing</div>
+            <div class="feature">✓ Price File Formatting</div>
+            <div class="feature">✓ Data Validation Rules</div>
+            <div class="feature">✓ Eclipse API Integration</div>
+            <div class="feature">✓ Batch Processing</div>
+          </div>
+          <div class="product-actions">
+            <a href="#contact" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Conversion Validation -->
+        <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="product-icon validation">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Conversion Validation Tools</h3>
+          <p>Ensure data integrity during Eclipse ERP migrations and conversions. Comprehensive validation and reporting for peace of mind.</p>
+          <div class="product-features">
+            <div class="feature">✓ Data Integrity Checks</div>
+            <div class="feature">✓ Conversion Reporting</div>
+            <div class="feature">✓ Eclipse Schema Validation</div>
+            <div class="feature">✓ Automated Testing</div>
+            <div class="feature">✓ Rollback Support</div>
+          </div>
+          <div class="product-actions">
+            <a href="#contact" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Eclipse ERP Specialists</h2>
+          <p class="lead">emp54 was founded with one mission: to unlock the full potential of Epicor Eclipse ERP through intelligent automation and purpose-built extensions.</p>
+          
+          <div class="about-points">
+            <div class="point">
+              <div class="point-icon">🎯</div>
+              <div class="point-content">
+                <h4>Eclipse Native</h4>
+                <p>Every tool we build is designed specifically for Eclipse ERP, leveraging its full API suite for seamless integration.</p>
+              </div>
+            </div>
+            
+            <div class="point">
+              <div class="point-icon">⚡</div>
+              <div class="point-content">
+                <h4>Automation First</h4>
+                <p>We eliminate manual processes that slow down your operations, replacing them with intelligent, reliable automation.</p>
+              </div>
+            </div>
+            
+            <div class="point">
+              <div class="point-icon">🔧</div>
+              <div class="point-content">
+                <h4>Distributor Focused</h4>
+                <p>Built by distributors, for distributors. We understand your workflows and business requirements intimately.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-visual">
+          <div class="api-showcase">
+            <h4>Eclipse APIs We Leverage</h4>
+            <div class="api-grid">
+              <div class="api-item">Sales Orders</div>
+              <div class="api-item">Invoicing</div>
+              <div class="api-item">Inventory</div>
+              <div class="api-item">Customers</div>
+              <div class="api-item">Vendors</div>
+              <div class="api-item">Shipping</div>
+              <div class="api-item">Products</div>
+              <div class="api-item">Pricing</div>
+              <div class="api-item">Reports</div>
+              <div class="api-item">Users</div>
+              <div class="api-item">Companies</div>
+              <div class="api-item">Documents</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Extend Your Eclipse ERP?</h2>
+        <p>Let's discuss how emp54's specialized tools can streamline your operations and eliminate manual processes.</p>
+        <div class="cta-buttons">
+          <a href="mailto:info@emp54.com?subject=Eclipse%20ERP%20Extensions%20Inquiry" class="btn btn-primary btn-large">
+            <span>Contact Us</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m9 18 6-6-6-6"/>
+            </svg>
+          </a>
+          <a href="ship54.html" class="btn btn-secondary btn-large">
+            <span>Explore Ship54</span>
+          </a>
+        </div>
+        <div class="trust-indicators">
+          <div class="indicator">
+            <span class="indicator-icon">🏢</span>
+            <span>Eclipse ERP Specialists</span>
+          </div>
+          <div class="indicator">
+            <span class="indicator-icon">⚡</span>
+            <span>Rapid Implementation</span>
+          </div>
+          <div class="indicator">
+            <span class="indicator-icon">📞</span>
+            <span>Direct Support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="images/emp54Logo.png" alt="emp54" class="logo-img" />
+            <span class="logo-text">emp<span class="accent">54</span></span>
+          </div>
+          <p>Specialized Eclipse ERP extensions and automation tools for modern distributors.</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Products</h4>
+            <a href="ship54.html">Ship54</a>
+            <a href="#contact">Kohler Sales Feed</a>
+            <a href="#contact">PDW File Prep</a>
+            <a href="#contact">Conversion Tools</a>
+          </div>
+          <div class="link-group">
+            <h4>Support</h4>
+            <a href="mailto:support@emp54.com">Help Center</a>
+            <a href="mailto:info@emp54.com">Contact</a>
+            <a href="https://vue-basic-production-a944.up.railway.app/login/">Client Portal</a>
+          </div>
+          <div class="link-group">
+            <h4>Company</h4>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="mailto:info@emp54.com">Support</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 emp54. All rights reserved. Specialized Eclipse ERP extensions.</p>
+        <div class="eclipse-notice">
+          <span class="eclipse-badge">Eclipse ERP</span>
+          <span>Built specifically for Epicor Eclipse distributors</span>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
